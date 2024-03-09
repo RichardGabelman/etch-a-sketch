@@ -1,6 +1,11 @@
-.test {
-  outline: solid;
+body {
+  background-color: gray;
+}
+
+.square {
   flex-grow: 1;
+  outline: 2px inset;
+  background-color: white;
 }
 
 .container {
@@ -9,10 +14,19 @@
   width: 960px;
   height: 960px;
   margin: auto;
+  outline: solid;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
 }
