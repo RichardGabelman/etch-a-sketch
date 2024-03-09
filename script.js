@@ -22,7 +22,10 @@ function newGrid(size) {
   squares.forEach(item => {
   item.addEventListener('mouseenter', e => {
     const target = e.target;
-    target.style.backgroundColor = "blue";
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
   })
 })
 }
